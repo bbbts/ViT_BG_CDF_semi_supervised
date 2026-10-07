@@ -59,9 +59,9 @@ For example, to run inference using the 40% labeled-data model:
 
 ```bash
 python3 inference.py \
-  --model-path /path/to/segmenter_SEMI_META_BG_CDF/segm/MODEL_FILE_0.4/checkpoint.pth \
+  --model-path /path/to/MODEL_FILE_0.4/checkpoint.pth \
   --input-dir $DATASET/images/test/ \
-  --output-dir /path/to/segmenter_SEMI_META_BG_CDF/segm/PREDICTION_0.4_new/meta/ \
+  --output-dir /path/to/PREDICTION_0.4/meta/ \
   --gt-dir $DATASET/masks/test/
 ```
 
@@ -86,7 +86,7 @@ The following command trains the BG-CDF-enhanced semi-supervised model using 40%
 CUDA_VISIBLE_DEVICES=6,7 python3 train.py \
   --dataset-dir /path/to/Datasets/Meta/ \
   --teacher-dir /path/to/segmenter_supervised_META/segm/MODEL_FILE/ \
-  --log-dir /path/to/segmenter_SEMI_META_BG_CDF/segm/MODEL_FILE_0.4/ \
+  --log-dir /path/to/segm/MODEL_FILE_0.4/ \
   --dataset meta \
   --backbone vit_tiny_patch16_384 \
   --decoder mask_transformer \
@@ -112,7 +112,7 @@ For example, the `0.7` configuration uses 70% labeled data and 30% unlabeled dat
 CUDA_VISIBLE_DEVICES=6,7 python3 train.py \
   --dataset-dir /path/to/Datasets/Meta/ \
   --teacher-dir /path/to/segmenter_supervised_META/segm/MODEL_FILE/ \
-  --log-dir /path/to/segmenter_SEMI_META_BG_CDF/segm/MODEL_FILE_0.7/ \
+  --log-dir /path/to/segm/MODEL_FILE_0.7/ \
   --dataset meta \
   --backbone vit_tiny_patch16_384 \
   --decoder mask_transformer \

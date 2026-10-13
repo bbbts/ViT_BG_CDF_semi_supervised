@@ -166,6 +166,7 @@ The demonstration uses a Vision Transformer Tiny backbone (`vit_tiny_patch16_384
 <p align="center">
   <a href="segm/ring_vid.mp4">▶ Watch the complete two-minute video</a>
 </p>
+
 ### Video Output
 
 The processed video highlights predicted fire regions in red. This demonstration focuses on fire predictions only. 

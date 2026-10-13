@@ -158,9 +158,14 @@ python -m segm.scripts.show_attn_map checkpoint.pth \
 This repository includes a qualitative video-inference demonstration using footage associated with the August 2026 Bug Fire near Reno, Nevada. The fire affected the HDRFS RRR2 research site, illustrating the potential relevance of remote-sensing and image-analysis methods for environmental monitoring and post-fire assessment.
 
 The demonstration uses a Vision Transformer Tiny backbone (`vit_tiny_patch16_384`), a Mask Transformer decoder, and the trained checkpoint located at `old_MODEL_FILE_0.7/checkpoint.pth`.
-![BG-CDF Bug Fire Segmentation Demo](segm/assets/ring_vid_short.gif)
-[Watch the complete two-minute video](segm/ring_vid.mp4)
 
+<p align="center">
+  <img src="segm/assets/ring_vid_short.gif" alt="BG-CDF Bug Fire Segmentation Demo" width="100%">
+</p>
+
+<p align="center">
+  <a href="segm/ring_vid.mp4">▶ Watch the complete two-minute video</a>
+</p>
 ### Video Output
 
 The processed video highlights predicted fire regions in red. This demonstration focuses on fire predictions only. 

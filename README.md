@@ -153,6 +153,7 @@ python -m segm.scripts.show_attn_map checkpoint.pth \
     --cls
 ```
 
+<!--
 ## Video Segmentation: Bug Fire Demonstration
 
 This repository includes a qualitative video-inference demonstration using footage associated with the August 2026 Bug Fire near Reno, Nevada. The fire affected the HDRFS RRR2 research site, illustrating the potential relevance of remote-sensing and image-analysis methods for environmental monitoring and post-fire assessment.
@@ -166,6 +167,7 @@ The demonstration uses a Vision Transformer Tiny backbone (`vit_tiny_patch16_384
 <p align="center">
   <a href="segm/ring_vid.mp4">▶ Watch the complete two-minute video</a>
 </p>
+-->
 
 ### Video Output
 
